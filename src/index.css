@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -90,11 +90,30 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight;
+  h1 {
+    @apply font-display font-extrabold tracking-tight leading-[1.1];
+  }
+
+  h2 {
+    @apply font-display font-bold tracking-tight leading-tight;
+  }
+
+  h3, h4 {
+    @apply font-display font-semibold tracking-tight leading-snug;
+  }
+
+  h5, h6 {
+    @apply font-display font-semibold tracking-normal;
+  }
+
+  p {
+    @apply leading-relaxed;
   }
 }
 
