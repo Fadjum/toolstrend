@@ -1,13 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Layout from "@/components/layout/Layout";
+import SEO from "@/components/SEO";
+import FeaturedArticle from "@/components/home/FeaturedArticle";
+import ToolsGrid from "@/components/home/ToolsGrid";
+import ComparisonTable from "@/components/home/ComparisonTable";
+import GuidesSection from "@/components/home/GuidesSection";
+import NewsletterCTA from "@/components/home/NewsletterCTA";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      <SEO
+        title="Best Tech, AI & Productivity Tools"
+        description="Discover the best tech, software, AI, and productivity tools to boost your workflow. Expert reviews, comparisons, and how-to guides."
+        keywords="AI tools, productivity software, tech tools, software reviews, best AI apps, productivity apps"
+        canonicalUrl="https://tools.trendexhub.com"
+      />
+      <FeaturedArticle />
+      <ToolsGrid />
+      <ComparisonTable />
+      <GuidesSection />
+      <NewsletterCTA />
+    </Layout>
   );
 };
 
