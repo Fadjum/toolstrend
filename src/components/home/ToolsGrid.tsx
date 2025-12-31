@@ -2,63 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Star, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
-const tools = [
-  {
-    id: 1,
-    name: "ChatGPT",
-    category: "AI Assistant",
-    description: "Advanced AI chatbot for writing, coding, and problem-solving.",
-    rating: 4.8,
-    isFree: true,
-    slug: "chatgpt",
-  },
-  {
-    id: 2,
-    name: "Notion",
-    category: "Productivity",
-    description: "All-in-one workspace for notes, docs, wikis, and project management.",
-    rating: 4.7,
-    isFree: true,
-    slug: "notion",
-  },
-  {
-    id: 3,
-    name: "Figma",
-    category: "Design",
-    description: "Collaborative interface design tool for teams.",
-    rating: 4.9,
-    isFree: true,
-    slug: "figma",
-  },
-  {
-    id: 4,
-    name: "GitHub Copilot",
-    category: "Development",
-    description: "AI pair programmer that helps you write better code faster.",
-    rating: 4.6,
-    isFree: false,
-    slug: "github-copilot",
-  },
-  {
-    id: 5,
-    name: "Midjourney",
-    category: "AI Design",
-    description: "Create stunning AI-generated artwork and images from text prompts.",
-    rating: 4.7,
-    isFree: false,
-    slug: "midjourney",
-  },
-  {
-    id: 6,
-    name: "Linear",
-    category: "Project Management",
-    description: "Streamlined issue tracking for high-performance software teams.",
-    rating: 4.8,
-    isFree: true,
-    slug: "linear",
-  },
-];
+import { tools } from "@/data/tools";
 
 const ToolsGrid = () => {
   return (
