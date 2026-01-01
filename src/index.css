@@ -53,37 +53,44 @@
   }
 
   .dark {
-    --background: 25 25% 8%;
-    --foreground: 35 25% 95%;
+    /* Deep, moody coffee-brown dark theme */
+    --background: 20 25% 6%;
+    --foreground: 35 20% 92%;
 
-    --card: 25 25% 11%;
-    --card-foreground: 35 25% 95%;
+    --card: 22 22% 9%;
+    --card-foreground: 35 20% 92%;
 
-    --popover: 25 25% 11%;
-    --popover-foreground: 35 25% 95%;
+    --popover: 22 22% 9%;
+    --popover-foreground: 35 20% 92%;
 
-    --primary: 30 50% 55%;
-    --primary-foreground: 25 25% 8%;
+    /* Warm amber/caramel accent */
+    --primary: 28 55% 50%;
+    --primary-foreground: 20 25% 6%;
 
-    --secondary: 25 20% 18%;
-    --secondary-foreground: 35 25% 90%;
+    --secondary: 22 18% 14%;
+    --secondary-foreground: 35 18% 85%;
 
-    --muted: 25 20% 18%;
-    --muted-foreground: 30 15% 60%;
+    --muted: 22 15% 16%;
+    --muted-foreground: 28 12% 55%;
 
-    --accent: 30 25% 22%;
-    --accent-foreground: 35 25% 90%;
+    --accent: 25 22% 18%;
+    --accent-foreground: 35 18% 85%;
 
-    --destructive: 0 55% 45%;
-    --destructive-foreground: 35 25% 95%;
+    --destructive: 0 50% 42%;
+    --destructive-foreground: 35 20% 92%;
 
-    --border: 25 20% 18%;
-    --input: 25 20% 18%;
-    --ring: 30 50% 55%;
+    --border: 22 18% 16%;
+    --input: 22 18% 16%;
+    --ring: 28 55% 50%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(30 50% 45%) 0%, hsl(25 40% 35%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(25 25% 8%) 0%, hsl(25 25% 12%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(25 20% 12%) 0%, hsl(30 20% 15%) 50%, hsl(25 25% 10%) 100%);
+    /* Dark mode custom tokens */
+    --success: 142 40% 35%;
+    --warning: 30 70% 45%;
+    --info: 200 40% 40%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(28 55% 45%) 0%, hsl(22 45% 35%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(20 25% 6%) 0%, hsl(22 22% 10%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(22 20% 10%) 0%, hsl(28 18% 14%) 50%, hsl(20 22% 8%) 100%);
   }
 }
 
