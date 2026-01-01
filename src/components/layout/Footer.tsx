@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Zap } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,23 +7,20 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                <Zap className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <span className="font-semibold text-lg">
-                TrendexHub <span className="text-primary">Tools</span>
+            <Link to="/" className="flex items-center">
+              <span className="font-serif text-2xl tracking-tight text-foreground">
+                trendera
               </span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Discover the best tech, software, AI, and productivity tools to
-              boost your workflow.
+              Your curated guide to the best tech, AI, and productivity tools. 
+              Thoughtful reviews and insights for mindful productivity.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-medium mb-4">Explore</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -47,7 +43,7 @@ const Footer = () => {
                   to="/guides"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  How-To Guides
+                  Guides
                 </Link>
               </li>
               <li>
@@ -63,7 +59,7 @@ const Footer = () => {
 
           {/* Categories */}
           <div>
-            <h3 className="font-semibold mb-4">Categories</h3>
+            <h3 className="font-medium mb-4">Categories</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -102,7 +98,7 @@ const Footer = () => {
 
           {/* Legal */}
           <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
+            <h3 className="font-medium mb-4">Information</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -151,7 +147,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} TrendexHub Tools. All rights reserved.
+            © {new Date().getFullYear()} trendera. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
             This site contains affiliate links. We may earn a commission at no extra cost to you.
